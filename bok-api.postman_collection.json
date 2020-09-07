@@ -1,0 +1,497 @@
+{
+	"info": {
+		"_postman_id": "828a03c3-6439-40a8-b11e-2734b5c37a5f",
+		"name": "bok-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "accept Booking",
+			"item": [
+				{
+					"name": "/acceptBooking",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/acceptBooking",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"acceptBooking"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "<string>",
+									"description": {
+										"content": "",
+										"type": "text/plain"
+									}
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/acceptBooking",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/acceptBooking",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"acceptBooking"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 response",
+							"originalRequest": {
+								"method": "OPTIONS",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/acceptBooking",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"acceptBooking"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "<string>"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "<string>"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "<string>"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "authenticate",
+			"item": [
+				{
+					"name": "/authenticate",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/authenticate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/authenticate",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/authenticate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"authenticate"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 response",
+							"originalRequest": {
+								"method": "OPTIONS",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/authenticate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"authenticate"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "<string>"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "<string>"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "<string>"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "book",
+			"item": [
+				{
+					"name": "/book",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"currentLocation\": {\n\t\t\"lat\": 10.330647,\n\t\t\"long\": 123.898480\n\t},\n\t\"bookingInformation\": {\n\t    \"bookingType\": \"BATTERY_BOOKING\",\n\t    \"bookingInfo\": {\n\t    \t\"hello\": \"world\"\n\t    }\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/book",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/book",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/book",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"book"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 response",
+							"originalRequest": {
+								"method": "OPTIONS",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/book",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"book"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "<string>"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "<string>"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "<string>"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "location/{id}",
+			"item": [
+				{
+					"name": "/location/:id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/location/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"location",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "<string>",
+									"description": {
+										"content": "",
+										"type": "text/plain"
+									}
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/location/:id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/location/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"location",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "<string>",
+									"description": {
+										"content": "",
+										"type": "text/plain"
+									}
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/location/:id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/location/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"location",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 response",
+							"originalRequest": {
+								"method": "OPTIONS",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/location/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"location",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "<string>"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "<string>"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "<string>"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "GvgGoKvEYQ3iloCIHhpYu3pa0H38Nmvc7TcrEU5A",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "0475592c-0a8f-4702-b2aa-98279e1887be",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "cbd05b49-bb2b-45be-a32d-74c7bf6147ce",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "0d7ec4ff-b32b-473f-9774-b244a080c8a3",
+			"key": "baseUrl",
+			"value": "https://ccjdvz0f97.execute-api.ap-southeast-1.amazonaws.com/test",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

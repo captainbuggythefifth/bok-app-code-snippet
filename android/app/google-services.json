@@ -1,0 +1,48 @@
+{
+    "project_info": {
+        "project_number": "877494621728",
+        "firebase_url": "https://bok-maps-1.firebaseio.com",
+        "project_id": "bok-maps-1",
+        "storage_bucket": "bok-maps-1.appspot.com"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:877494621728:android:2b1751f5ff18f6c2364e45",
+                "android_client_info": {
+                    "package_name": "com.bok"
+                }
+            },
+            "oauth_client": [
+                {
+                    "client_id": "877494621728-7kf04n8mlesskkav0f013a67mlkgf9g6.apps.googleusercontent.com",
+                    "client_type": 1,
+                    "android_info": {
+                        "package_name": "com.bok",
+                        "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+                    }
+                },
+                {
+                    "client_id": "877494621728-cetbcbupn09ct3uvv3odhfdvqflttmhn.apps.googleusercontent.com",
+                    "client_type": 3
+                }
+            ],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyBxgrg5FaUdgt3O4qn_Hcavs19r63QXRKE"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": [
+                        {
+                            "client_id": "877494621728-cetbcbupn09ct3uvv3odhfdvqflttmhn.apps.googleusercontent.com",
+                            "client_type": 3
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}
